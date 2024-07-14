@@ -1,45 +1,91 @@
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 .sub-container2 {
-    display: flex;
-    text-align: center;
-  }
-  
+  display: flex;
+  justify-content: space-between; 
+  align-items: stretch; 
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-container2 {
+  flex: 5; 
+  border: 5px dashed #e94919;
+  color: #e94919;
+  padding: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative; 
+}
+
+.validity-text {
+  color: #6e6c6b;
+  font-weight: 500;
+}
+
+.text-container2 h1 {
+  font-size: 2.25rem;
+}
+
+.text-container2 h3,
+.text-container2 h1,
+.text-container2 h4 {
+  margin: 0;
+}
+
+.copy-text-box {
+  flex: 1; 
+  color: #ffffff;
+  background: #e94919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.copy-text-box p {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transform: rotate(90deg);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
   .text-container2 {
-    width: 80%;
-    border: 5px dashed #e94919;
-    color: #e94919;
-    padding: 1rem;
+    flex: 3;
   }
-  
-  .validity-text {
-    color: #6e6c6b;
-    font-weight: 500;
-  }
-  
-  .text-container2 h1 {
-    font-size: 2.25rem;
-  }
-  
-  .text-container2 h3,
-  .text-container2 h1,
-  .text-container2 h4 {
-    margin: 0;
-  }
-  
+
   .copy-text-box {
-    width: 20%;
-    border: 1px solid #e94919;
-    color: #ffffff;
-    background: #e94919;
-    display: flex;          
-    justify-content: center; 
-    align-items: center;    
+    flex: 1;
   }
-  
+}
+
+@media (max-width: 480px) {
+  .text-container2 {
+    flex: 3;
+  }
+
+  .copy-text-box {
+    flex: 1;
+    padding: 0.5rem;
+  }
+
+  .text-container2 h1 {
+    font-size: 1.75rem;
+  }
+
   .copy-text-box p {
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 1px;
-    transform: rotate(90deg);
-    text-align: center;     
+    font-size: 0.875rem;
   }
-  
+}

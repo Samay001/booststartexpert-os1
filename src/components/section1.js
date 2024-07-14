@@ -1,7 +1,7 @@
 import React from 'react'
 import './style/section1.css'
 
-const section1 = () => {
+const Section1 = () => {
   return (
     <div className='container'>
         <div className='sub-container'>
@@ -13,7 +13,7 @@ const section1 = () => {
                     <h1>Image with Text</h1>
                 </div>
                 <div className='description-text'>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>  
                 </div>
                 <div>
                     <button>Button Label</button>
@@ -24,4 +24,4 @@ const section1 = () => {
   )
 }
 
-export default section1
+export default Section1
